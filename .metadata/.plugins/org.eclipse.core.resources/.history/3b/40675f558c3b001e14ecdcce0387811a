@@ -1,0 +1,33 @@
+package string;
+
+import java.util.HashMap;
+
+public class StringEx 
+{
+	
+	static void duplicateWords(String inputString)
+	{
+		String [] s=inputString.split(" ");
+		
+		HashMap<String,Integer> wordCount=new HashMap<String, Integer>();
+		
+	
+		for(String words:s)
+		{
+		
+			if(wordCount.containsKey(words.toLowerCase()))
+			{
+				wordCount.put(words.toLowerCase(),wordCount.get(words.toLowerCase()+1) );
+			}
+		}
+		
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	
+		
+	}
+}

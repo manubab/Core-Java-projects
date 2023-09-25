@@ -1,0 +1,20 @@
+package String_Practice;
+import java.io.*;
+public class Test {
+	public static void main(String[] args) {
+		String s="I am a indian i am love indian";
+		int n=s.length();
+		
+		String[] s1=s.split(" ");
+		
+		for(String s2:s1)
+		{
+			System.out.println(s2+" ");
+			
+		}
+		
+		
+		
+	}
+
+}

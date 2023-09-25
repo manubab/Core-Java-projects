@@ -1,0 +1,20 @@
+package maccess;
+import java.io.*;
+public class FISDemo {
+
+	public static void main(String[] args) 
+			throws IOException,FileNotFoundException{
+		
+		FileOutputStream fis=new FileOutputStream("manu-Notepad");
+		fis.write();
+		
+		
+		System.out.println("Data :" );
+		
+		fis.close();
+		
+		
+
+	}
+
+}

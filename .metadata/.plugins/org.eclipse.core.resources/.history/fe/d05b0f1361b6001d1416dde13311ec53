@@ -1,0 +1,15 @@
+package maccess;
+
+public interface Manu {
+	class A{
+		
+	}
+
+
+class Main{
+	public static void main(String[] args) {
+		Manu m=new Manu();
+		A a=new A();
+	}
+}
+}

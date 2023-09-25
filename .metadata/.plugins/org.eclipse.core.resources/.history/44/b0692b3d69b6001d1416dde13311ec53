@@ -1,0 +1,36 @@
+package maccess;
+import java.util.*;
+interface Area{
+	public void reactangle();
+	
+	public void triagle();
+	
+}
+interface Area_Curves extends Area{
+	public void Circle();
+	 
+	public void semi_circle();
+	
+}
+
+
+
+public class InterFace_Examples implements Area_Curves{
+	
+	@Override
+	public void reactangle() {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the value of side rectagels :");
+		double d1=sc.nextDouble();
+		double d2=sc.nextDouble();
+
+	}
+
+	
+
+	public static void main(String[] args) {
+		System.out.println(" *****Using Interfaces & than Printing Areas***** ");
+
+	}
+
+}

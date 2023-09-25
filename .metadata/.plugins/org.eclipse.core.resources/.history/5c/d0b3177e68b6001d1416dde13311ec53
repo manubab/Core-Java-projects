@@ -1,0 +1,24 @@
+package maccess;
+
+interface Area{
+	public void reactangle();
+	
+	public void triagle();
+	
+}
+interface Area_Curves extends Area{
+	public void Circle();
+	 
+	public void semi_circle();
+	
+}
+
+
+
+public class InterFace_Examples {
+
+	public static void main(String[] args) {
+
+	}
+
+}

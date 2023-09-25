@@ -1,0 +1,76 @@
+package qalitylabs;
+
+public class ArraysCompare {
+	/*
+	 * public static void main(String[] args) { String[] arr1 = { "red", "green",
+	 * "yellow", "blue" };
+	 * 
+	 * String[] arr2 = { "green", "red", "blue", "yellow" };
+	 * 
+	 * String result = arraysCompare(arr1, arr2);
+	 * 
+	 * }
+	 */
+	private static String arraysCompare(String[] arr1, String[] arr2) {
+
+		if (arr1.length != arr2.length) {
+			return "both are not same";
+		}
+		for (int i = 0; i < arr1.length; i++) {
+			for (int j = 0; j < arr1.length; j++) {
+
+				if (arr1[i].equals(arr2[j])) {
+					return "both are same";
+				}
+			}
+
+		}
+
+		return "not same";
+	}
+	
+	
+	public static boolean checkEquality(String[] s1,String []s2)
+	{
+		if(s1==s2)
+		{
+			return true;
+		}
+		if(s1==null||s2==null)
+		{
+			return false;
+		}
+		int n=s1.length;
+		if(n!=s2.length)
+		{
+			return false;
+		}
+		
+		for(int i=0;i<n;i++)
+		{
+			if(!s1[i].equals(s2[i]))
+			{
+				return false;
+			}
+		}
+		return true;
+	
+	}
+	
+	
+	public static void main(String[] args)
+	{
+		String []s1= {"A","B","C"};
+		
+		String [] s2= {"C","B","A"};
+		
+		if(checkEquality(s1,s2))
+		{
+			System.out.println("both arrays are sam");
+		}
+		else
+		{
+			System.out.println("Both arrays are not eqeual");
+		}
+	}
+}

@@ -1,0 +1,13 @@
+package test;
+public class Arrays_Problems {
+	public static void main(String[] args) {
+		int count=0;
+		int[] a= {12,23,34};
+		for(int i=1;i<=a.length;i++) {
+		count=count+i;
+		
+		}
+		System.out.println(count);
+	}
+
+}

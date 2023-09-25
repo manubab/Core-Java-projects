@@ -1,0 +1,15 @@
+package s1;
+
+public class pattern 
+{
+	public static void main(String[] args) 
+	{
+		
+		int a,b;
+		
+		
+		
+		
+	}
+
+}

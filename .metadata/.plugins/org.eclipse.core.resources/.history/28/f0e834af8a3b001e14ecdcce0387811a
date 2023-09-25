@@ -1,0 +1,27 @@
+package string;
+
+import java.util.HashMap;
+
+public class StringEx 
+{
+	
+	static void duplicateWords(String inputString)
+	{
+		String [] s=inputString.split(" ");
+		
+		HashMap<String,Integer> wordCount=new HashMap<String, Integer>();
+		
+		
+		wordCount.put("manu", 1);
+		
+		System.out.println(wordCount.get(1)+1);
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		duplicateWords("Manu");
+		
+	}
+}

@@ -1,0 +1,11 @@
+package test;
+
+public class ClassA {
+	public static void m() {
+		System.out.println(" i am static method Pclass A ");
+	}
+	public static void m() {
+		
+	}
+
+}

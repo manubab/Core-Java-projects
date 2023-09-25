@@ -1,0 +1,115 @@
+package String_Practice;
+import java.util.*;
+class A1{
+	Scanner sc=new Scanner(System.in);
+	
+	void CharSaparateLine() {
+		System.out.println("Enter String :");
+		String s=sc.nextLine();
+		int Ucount=0;
+		int Lcount=0;
+		int Dcount=0;
+		
+		for(int i=0;i<s.length();i++) { 
+			char c=s.charAt(i);
+		//	System.out.println(c);                                     // printing Separate Line
+		//	System.out.println("ASCII :"+(int)c);                      // converting char to ASCII every Char in a String
+		
+//			if(Character.isUpperCase(c)) {
+//				System.out.println(c);                                 // printing UpperCase char only 
+//			}
+			
+//			if(Character.isLowerCase(c)) {                             // printing LowerCase char only
+//			System.out.println(""); 
+//			}                             
+//		}
+	
+//			if(Character.isDigit(c)) {                                 // printing only digits
+//				System.out.println(c);
+//			}
+			
+//			if(Character.isLetterOrDigit(c)) {                          // printing Letters and characters
+//				System.out.println("L/d :"+c);
+//			}
+			                                    
+		if(Character.isUpperCase(c)) {                              // Count upperCase Characters
+				Ucount++;
+			}
+		if(Character.isLowerCase(c)) {                              //count LowerCase Characters
+			Lcount++;
+		}
+		if(Character.isDigit(c)) {                                  // count Digits Characters     
+			Dcount++;
+		}
+		}
+		System.out.println("Upper :"+Ucount);
+		System.out.println("Lower :"+Lcount);
+	    System.out.println("Digits :"+Dcount);
+	}
+
+}
+
+class A2{
+	void col() {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter String :");
+		String s=sc.nextLine();
+		
+		
+		int count=0;
+		for(int i=0;i<s.length();i++) {
+			char c=s.charAt(i);
+//			if(c=='M') {
+//				count++;
+//				
+//			}
+			char u=Character.toUpperCase(c);
+			if(u=='R') {
+				System.out.println(u);
+			}
+		
+		}
+	//	System.out.println("Number of Charaters :"+count);
+	}
+	
+}
+// counting vowels 
+class A3{
+	Scanner sc=new Scanner(System.in);
+	String s=sc.nextLine();
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public class Main1 {
+   public static void main(String[] args) {
+	  // A1 a1=new A1();
+	   //a.CharSaparateLine();
+	   
+	   A2 a2=new A2();
+	   a2.col();
+   }
+	
+}
+
+

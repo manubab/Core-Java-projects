@@ -1,0 +1,15 @@
+package maccess;
+import test.*;
+public class Demo_Metho_ref {
+	public static void main(String[] args) {
+		
+		System.out.println("---------------------------------");
+		
+		Sayable s=Method_ref1::new;
+		
+		Sayable s1=Method_ref1::m2();
+		s.say();
+		
+	}
+
+}

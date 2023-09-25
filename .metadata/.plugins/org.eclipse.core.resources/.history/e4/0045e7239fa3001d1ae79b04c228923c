@@ -1,0 +1,28 @@
+package test;
+
+import java.util.Arrays;
+
+public class Anagram_String {
+	public static void main(String[] args) {
+		String s1="Silent";
+		String s2 ="listen";
+		
+		
+		
+	String S1=	s1.toLowerCase();
+		String S2=s2.toLowerCase();
+		
+		char[] a=S1.toCharArray();
+		char [] b=S2.toCharArray();
+		Arrays.sort(a);
+		Arrays.sort(b);
+		Boolean c=Arrays.equals(a, b);
+		
+		if(a==b) {
+			System.out.println("Strings are anagram");
+		}else {
+			System.out.println("String are not anagtram");
+		}
+	}
+
+}

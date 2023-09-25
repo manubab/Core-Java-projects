@@ -1,0 +1,35 @@
+package maccess;
+
+import java.util.*;
+
+public class MaptoArray {
+
+	public static void main(String[] args) {
+
+		HashMap<Integer, String> ob = new HashMap<>();
+		ob.put(101, "abc");
+		ob.put(102, "def");
+		ob.put(103, "ghi");
+		ob.put(104, "jkl");
+
+		MaptoArray ob2 = new MaptoArray();
+
+		Integer[] cma = ob2.mapToArray(ob);
+
+		for (Integer values : cma) {
+			System.out.println(values);
+
+		}
+
+	}
+
+	public Integer[] mapToArray(Map<Integer, String> sourceMap) {
+
+		Collection<Integer> values = sourceMap.keySet();
+
+		Integer[] terget = values.toArray(new Integer[(values.size())]);
+
+		return terget;
+	}
+
+}

@@ -1,0 +1,18 @@
+package zigzag;
+
+public class Solution1
+{
+	public String zigZag(String s,int numRows)
+	{
+		if(numRows==1)
+			return s;
+		
+		StringBuilder[] sbs=new StringBuilder[numRows];
+		
+		
+		
+		
+		
+	}
+
+}

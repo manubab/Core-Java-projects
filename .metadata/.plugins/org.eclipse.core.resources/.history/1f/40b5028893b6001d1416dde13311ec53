@@ -1,0 +1,25 @@
+package maccess;
+import java.io.*;
+public class FISDemo {
+
+	public static void main(String[] args) 
+			throws IOException,FileNotFoundException{
+		
+		FileOutputStream fis=new FileOutputStream("manu.txt");
+		
+		fis.write(5);
+		System.out.println("Data is saved ...." );
+
+		FileInputStream fis1=new FileInputStream("manu.txt");
+		int data=fis1.read();
+		System.out.println("data :"+data);
+
+		
+		
+		fis.close();
+		
+		
+
+	}
+
+}

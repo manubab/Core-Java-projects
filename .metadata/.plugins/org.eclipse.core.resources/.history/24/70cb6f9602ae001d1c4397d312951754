@@ -1,0 +1,13 @@
+package test;
+
+//4)=>special number sum of digits and product of digits equal to given number,
+
+
+import java.util.*;
+public class Test3 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
+	}
+
+}

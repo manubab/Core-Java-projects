@@ -1,0 +1,15 @@
+package test;
+public class Arrays_Problems {
+	public static void main(String[] args) {
+		int count=0;
+		int[] a= {12,23,34};
+		for(int i=0;i<=a.length-1;i++) {
+	    count=a[i];
+	    count=count*3;
+		}
+		System.out.println("sum"+count);
+	}
+
+}
+
+//length(),length;

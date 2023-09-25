@@ -1,0 +1,35 @@
+package maccess;
+import java.util.*;
+import test.Books;
+public class Demo_Book_Array_Assignment {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter How many Number of Books :");
+		int n=sc.nextInt();
+		Books[] b=new Books[n];
+		for(int i=0;i<b.length;i++) {
+			System.out.println("Enter the Book Code :");
+			String Bc=sc.next();
+			System.out.println("Enter the Book Name :");
+			String Bn=sc.next();
+			System.out.println("Enter the Book Author :");
+			String Ba=sc.next();
+			System.out.println("Enter the Book price");
+			int pri=sc.nextInt();
+			System.out.println("Enter book Quantity : :");
+			int qua=sc.nextInt();
+			
+			b[i]=new Books(Bc, Bn, Ba, pri, qua);
+			
+		}
+		
+		for(Books b1: b) {
+			System.out.println(b1.toString());
+		}
+		sc.close();
+	}
+}
+
+
+
+// 			b[i]=new Books(sc.nextLine(),sc.nextLine(),sc.nextLine(),sc.nextInt(),sc.nextInt());

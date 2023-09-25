@@ -1,0 +1,91 @@
+package string;
+
+import java.util.HashMap;
+import java.util.Set;
+
+public class StringEx {
+
+	static void duplicateWords(String inputString) {
+		String[] s = inputString.split(" ");
+
+		HashMap<String, Integer> wordCount = new HashMap<String, Integer>();
+
+		for (String words : s) {
+
+			if (wordCount.containsKey(words.toLowerCase())) {
+				wordCount.put(words.toLowerCase(), wordCount.get(words.toLowerCase()) + 1);
+			} else {
+				wordCount.put(words.toLowerCase(), 1);
+			}
+		}
+
+		Set<String> wordsInString = wordCount.keySet();
+
+		for (String word : wordsInString) {
+			if (wordCount.get(word) > 1) {
+
+				System.out.println(word + " :" + wordCount.get(word));
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		duplicateWords("Bread butter and bread");
+
+		dpwords("mana");
+		
+		
+		System.out.println(totalWords("Bread butter and bread"));
+		
+		
+		
+		String s="Java is java again java again";
+		
+		char c='a';
+		
+		int count=s.length()-s.replace("a", "").length();
+		
+		System.out.println("Number of "+count);
+		
+		
+		
+		reverse("Manu");
+
+	}
+
+	static void dpwords(String input) {
+		char[] srr = input.toCharArray();
+
+		for (int i = 0; i < srr.length; i++) {
+			for (char c : srr) {
+				if (c == srr[i]) {
+					System.out.println(srr[i]);
+
+				}
+			}
+			break;
+		}
+	}
+	
+	
+	public static int totalWords(String s)
+	{
+		String [] srr=s.split(" ");
+		
+		return srr.length;
+	}
+	
+	
+	
+	public static void reverse(String s)
+	{
+		for(int i=s.length()+2;i>=0;i--)
+		{
+			System.out.println(s.charAt(i));
+		}
+	}
+	
+	
+	
+	
+}

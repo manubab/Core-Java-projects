@@ -1,0 +1,11 @@
+package test;
+
+public class Address1 {
+	public String city,state;
+	
+	public String toString()
+	{
+		return "city :"+city+" state :"+state;
+	}
+
+}

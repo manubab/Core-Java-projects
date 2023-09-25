@@ -1,0 +1,14 @@
+package practice;
+import java.util.stream.*;
+
+public class Demo1 {
+	public static void main(String[] args) {
+		
+		String[] arr={"manu","sai","amma","rajan"};
+		
+		Stream<String> ob=Stream.of(arr);
+		
+		
+	}
+
+}

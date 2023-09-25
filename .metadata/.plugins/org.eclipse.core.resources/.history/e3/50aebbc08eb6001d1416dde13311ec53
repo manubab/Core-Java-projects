@@ -1,0 +1,19 @@
+package maccess;
+import java.io.*;
+public class FISDemo {
+
+	public static void main(String[] args) 
+			throws IOException,FileNotFoundException{
+		
+		FileInputStream fis=new FileInputStream("Java Practice.txt");
+		int a=fis.read();
+		
+		System.out.println("Data :"+ a);
+		
+		fis.close();
+		
+		
+
+	}
+
+}

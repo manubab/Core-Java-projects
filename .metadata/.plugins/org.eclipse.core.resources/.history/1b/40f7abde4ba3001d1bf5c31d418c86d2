@@ -1,0 +1,18 @@
+package test;
+public class String_Methods_Usage_Class {
+	
+	public static void main(String[] args) {
+		String s="i am a code 3 right";
+		String S=" i am export on java";
+		System.out.println(s.charAt(2));
+		System.out.println(s.equals(S));
+		System.out.println(s.indent(5));
+		System.out.println(s.indexOf('3'));
+		System.out.println(s.codePointAt(3));
+		System.out.println(s.codePointBefore(2));
+		
+		
+		
+	}
+
+}

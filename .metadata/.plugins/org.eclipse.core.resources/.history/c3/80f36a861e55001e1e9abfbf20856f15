@@ -1,0 +1,20 @@
+package session14;
+
+public class LenearSearch {
+	public static void main(String[] args) {
+
+		int arr[] = { 1, 2, 3, 4, 10, 9, 7, 8, 5 };
+
+		int val = 5;
+
+		// Linear search algorithm
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] == val) {
+				System.out.println(true);
+			}
+			System.out.println(false);
+		}
+
+	}
+
+}

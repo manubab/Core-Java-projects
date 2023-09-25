@@ -1,0 +1,31 @@
+package test;
+
+// 3)=> spy number sum its digits equal the product of the digits
+
+import java.util.Scanner;
+
+public class Test2 {
+
+	
+	public static void main(String[] args) {
+		int pro = 0;
+		int s = 0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Number :");
+		int n = sc.nextInt();
+		while (n != 0) {
+			int d = n % 10;
+			pro = pro + d;
+			s = s *10+ d;
+			n = pro + s;
+			n=n/10;
+		}
+		if (n == pro + s) {
+			System.out.println("Spy number");
+		} else {
+			System.out.println("not Spy numbers");
+		}
+
+	}
+
+}

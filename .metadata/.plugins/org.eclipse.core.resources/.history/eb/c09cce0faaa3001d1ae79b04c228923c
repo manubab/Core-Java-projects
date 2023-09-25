@@ -1,0 +1,34 @@
+package test;
+public class Arrays_Problems {
+	public static void main(String[] args) {
+		int count = 0;
+		long sum=0;
+		int multi = 1;
+		int[] a = { 12, 23, 34, 12, 23, 44, 35 };
+		for (int i=0;i <=a.length-1;i++) {
+			
+			sum=sum+a[i];
+			multi=multi*a[i];
+		}
+		System.out.println("sum :" + sum);
+		System.out.println("Multiplication of array elements"+multi);
+                                                                 //		System.out.println("multiplication : " + multi);
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//length(),length;

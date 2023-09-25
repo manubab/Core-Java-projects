@@ -1,0 +1,22 @@
+package maccess;
+import java.util.*;
+
+public class IsLands 
+{
+	
+	public static List<List<Integer>> islands(int numbers)
+	{
+		List<List<Integer>> triangle=new ArrayList<>();
+		
+		if(triangle.size()==0)
+		{
+			return triangle;
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

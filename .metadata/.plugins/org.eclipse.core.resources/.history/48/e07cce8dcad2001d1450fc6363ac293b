@@ -1,0 +1,121 @@
+package maccess;
+import java.util.*;
+import java.util.function.*;
+import test.*;
+public class Demo_Product {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		ArrayList<Product> al=new ArrayList<>();
+		try(sc;){
+			try {
+				while(true) {
+				System.out.println("-------Choice------");
+				System.out.println("\t1.add\n\t2.Sort\n\t3.exit");
+				System.out.println("Enter choice :");
+				switch(Integer.parseInt(sc.nextLine()))
+				{
+				case 1:
+					System.out.println("Enter pCode");
+					String pCode=sc.nextLine();
+					System.out.println("Enter pName");
+					String pName=sc.nextLine();
+					System.out.println("Enter pPrice");
+					float pPrice=Float.parseFloat(sc.nextLine());
+					System.out.println("Enter pQty");
+					int pQty=Integer.parseInt(sc.nextLine());
+					al.add(new Product(pCode,pName,pPrice,pQty));
+					System.out.println("Product Addedd Succesfully ");
+					
+					for(Product p:al)
+					{
+						System.out.println(p.toStrig());
+					}
+					
+					break;
+				case 2:
+					x:
+					while(true) {
+					System.out.println("--------Choice--------");
+					System.out.println("\t1.CodeSort\n\t2.NameSort\n\t3.PriceSort\n\t4.QtySort\n\t5.exit");
+					System.out.println("Enter Choice :");
+					switch(Integer.parseInt(sc.nextLine())) {
+					case 1:
+						al.sort(new CodeSort());
+						Predicate<Product> pr=(k)->k.pQty<25;
+						al.forEach((z)->{
+							if(pr.test(z))
+							{
+								for(Product p1:al)
+								{
+									System.out.println(p1.toStrig());
+								}
+							}
+						});
+						break;
+					case 2:
+						break;
+					case 3:
+						break;
+					case 4:
+						break;
+					case 5:
+						System.out.println("Sorting Operation Stoped...!");
+						break x;
+						default:
+							System.out.println("invalid Choice.....!");
+						
+					}
+					}//loop close
+					break;
+				case 3:
+					System.out.println("Operation Stoped");
+					System.exit(0);
+					default:
+						System.out.println("invalid Choice ...!");
+					
+				
+				}//switch close
+				
+				}// loop close
+			}//try close 
+			catch(Exception e) {
+				e.printStackTrace();
+			}
+		
+		
+		
+		
+		
+		}//resource close;
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//System.out.println("Enter pCode:");
+//String pCode=sc.nextLine();
+//System.out.println("Enter PName :");
+//String pName=sc.nextLine();
+//System.out.println("Enter pPrice :");
+//float pPrice=Float.parseFloat(sc.nextLine());
+//System.out.println("Enter pQty :");
+//int pQty=Integer.parseInt(sc.nextLine());

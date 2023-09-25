@@ -1,0 +1,15 @@
+package test;
+public class Class_practice {
+	
+	public static void main(String[] args) {
+		String s="java code";
+		String r="uma maheshwari , raja manoharudu";
+		System.out.println("charecter postion of the data 3 : "+s.charAt(3));
+		System.out.println(s.charAt(6));
+		r.split(s, 3);
+		
+		
+		
+	}
+
+}

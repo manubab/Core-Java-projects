@@ -1,0 +1,47 @@
+package maccess;
+
+import java.util.*;
+import test.Employee;
+
+public class Demo_Arrays3 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Number of Employees : ");
+		
+		int n = Integer.parseInt(sc.nextLine());
+
+		Employee[] ob = new Employee[n];
+
+		
+			System.out.println("Enter " + n + " Employee Details :\n ");
+			for (int i = 0; i < ob.length; i++) {
+			ob[i] = new Employee();
+			
+			System.out.println("Enter "+(i+1)+" Employee Details : ");
+
+			System.out.println("\nEnter Employee id :\n");
+			ob[i].id = sc.nextLine();
+
+			System.out.println("\nEnter Employee name :\n");
+			ob[i].name = sc.nextLine();
+
+			System.out.println("\nEnter Employee desg :\n");
+			ob[i].desg = sc.nextLine();
+
+			System.out.println("\nEnter Employee bsal :\n");
+			ob[i].bsal = Integer.parseInt(sc.nextLine());
+			ob[i].total = ob[i].bsal + (0.93f * ob[i].bsal) + (0.63f * ob[i].bsal);
+
+			System.out.println("****Product details*****");
+
+			for (Employee k :ob) {
+				
+				System.out.println(k.toString());
+			}
+		}
+
+		sc.close();
+	}
+
+}

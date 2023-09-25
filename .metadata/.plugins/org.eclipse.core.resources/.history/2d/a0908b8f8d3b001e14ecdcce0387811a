@@ -1,0 +1,74 @@
+package string;
+
+import java.util.HashMap;
+import java.util.Set;
+
+public class StringEx 
+{
+	
+	static void duplicateWords(String inputString)
+	{
+		String [] s=inputString.split(" ");
+		
+		HashMap<String,Integer> wordCount=new HashMap<String, Integer>();
+		
+	
+		for(String words:s)
+		{
+		
+			if(wordCount.containsKey(words.toLowerCase()))
+			{
+				wordCount.put(words.toLowerCase(),wordCount.get(words.toLowerCase())+1 );
+			}
+			else
+			{
+				wordCount.put(words.toLowerCase(), 1);
+			}
+		}
+		
+		
+		Set<String> wordsInString=wordCount.keySet();
+		
+		for(String word:wordsInString)
+		{
+			if(wordCount.get(word)>1)
+			{
+				
+				System.out.println(word+" :"+wordCount.get(word));
+			}
+		}	
+	}
+	
+	public static void main(String[] args) 
+	{
+		duplicateWords("Bread butter and bread");
+		
+		
+		dpwords("mana");
+		
+	}
+	
+	
+	
+	static void dpwords(String input)
+	{
+		char[]srr=input.toCharArray();
+		
+		for(int i=0;i<srr.length;i++)
+		{
+			for(char c:srr)
+			{
+				if(c==srr[i])
+				{
+					System.out.println(srr[i]);
+					
+				}
+			}
+			break;
+		}
+	}
+	
+	
+	
+	
+}

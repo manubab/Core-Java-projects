@@ -1,0 +1,12 @@
+package nit;
+
+import java.util.Scanner;
+
+import test.DisplayTrainDetails;
+public class DemoConTrainDetails2 {
+	public static void main(String[] args) {
+		DisplayTrainDetails dt=new DisplayTrainDetails(0, null, null, null, null, null, null, 0);
+		dt.getTrainDetails();
+	}
+
+}

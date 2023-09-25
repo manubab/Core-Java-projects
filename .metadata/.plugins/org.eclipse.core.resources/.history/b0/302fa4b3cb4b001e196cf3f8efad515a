@@ -1,0 +1,38 @@
+package qalitylabs;
+
+public class ArraysCompare
+{
+	public static void main(String[] args) 
+	{
+		String[] arr1={"red","green","yellow","blue"};
+		
+		String[] arr2= {"green","red","blue","yellow"};
+		
+		
+		String result=arraysCompare(arr1,arr2);
+				System.out.println(result);
+	}
+
+	private static String arraysCompare(String[] arr1, String[] arr2) {
+
+	   if(arr1.length!=arr2.length)
+	   {
+		   return "both are not same";
+	   }
+	   for(int i=0;i<arr1.length;i++)
+	   {
+		  for(int j=0;j<arr1.length;j++)
+		  {
+			  
+			  if(arr1[i].equals(arr2[j]))
+			  {
+				  return "both are same";
+			  } 
+		  }
+	
+	   }
+	   
+	   return  "not same";
+	}
+
+}

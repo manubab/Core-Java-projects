@@ -1,0 +1,11 @@
+package master;
+
+public class Child_2 implements Master_Interface{
+
+	@Override
+	public void Password(String s) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

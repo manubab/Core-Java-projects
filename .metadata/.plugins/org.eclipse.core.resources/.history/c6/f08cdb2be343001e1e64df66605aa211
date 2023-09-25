@@ -1,0 +1,157 @@
+package string;
+
+
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.*;
+
+public class City
+{
+	private String name;
+	
+	private double tempareture;
+	
+	
+	public City() {
+		
+	}
+
+
+	public City(String name, double tempareture) {
+	
+		this.name = name;
+		this.tempareture = tempareture;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public double getTempareture() {
+		return tempareture;
+	}
+
+
+	public void setTempareture(double tempareture) {
+		this.tempareture = tempareture;
+	}
+
+
+	
+	
+	@Override
+	public String toString() {
+		return name + " --> " + tempareture;
+	}
+	
+	
+	
+	private static List<City> prepareTempareture()
+	{
+		
+		List<City> cities= new ArrayList<>();
+		cities.add(new City("New Delhi",33.5));
+		cities.add(new City("Mexico", 14));
+	    cities.add(new City("New York", 13));
+	    cities.add(new City("Dubai", 43));
+	    cities.add(new City("London", 15));
+	    cities.add(new City("London", 15));
+	    cities.add(new City("Alaska", 1));
+	    cities.add(new City("Kolkata", 30));
+	    cities.add(new City("Sydney", 11));
+	    cities.add(new City("xico", 14));
+	    cities.add(new City("Dubai", 43));
+	    cities.add(new City("Dubai", 44));
+	    return cities;
+		
+	}
+	
+	public static void main(String[] args) {
+		
+//		System.out.println(prepareTempareture().stream().filter(f->f.getTempareture()>10).map(f->f.getName()).collect(Collectors.toList()));
+//	
+//		System.out.println(prepareTempareture()
+//				.stream().map(e->e.getName())
+//				.collect(Collectors.toCollection(LinkedList::new)));
+//		
+//		
+		
+//		 System.out.println(prepareTempareture()
+//	                .stream()
+//	                .map(f -> f.getName())
+//	                .collect(Collectors.toCollection(ArrayList::new)));
+//		
+		 
+		 
+//		System.out.println(prepareTempareture()
+//				 .stream().filter(c->c.getTempareture()>10)
+//				 .collect(Collectors.toMap(City::getName, City::getTempareture,(r1,r2)->r2)));
+//		
+		
+		
+		
+		
+//	Map<String,Double> os=	prepareTempareture().stream().distinct().collect(Collectors.toMap(City::getName, City::getTempareture));
+		
+	
+//	os.forEach((a,b)->System.out.println(a +" :"+ b));
+	
+//		map.forEach((e1,e3)->System.out.println(e1 +" :"+e3.intValue()));
+		
+		
+		
+		Map<String,Integer> hmap=new HashMap<>();
+		
+		hmap.put("manu", 22);
+		hmap.put("Ravi", 24);
+		hmap.put("Praveen", 25);
+		hmap.put("Ravi", 25);
+		
+//		hmap.forEach((e1,e2)->System.out.println(e1+" : "+e2));
+		
+		
+		
+         System.out.println(  prepareTempareture().stream().collect(Collectors.groupingBy(City::getName)));
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+class Test 
+{
+	
+	
+	
+
+}

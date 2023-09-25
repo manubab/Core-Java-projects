@@ -1,0 +1,29 @@
+package maccess;
+import test.*;
+public class Demo_InnerClass {
+	public static void main(String[] args) {
+		AClass ob=new AClass() {
+			public void dis(int a) {
+				System.out.println("*** dis m1() ***");
+				System.out.println("The value a :"+a);
+			}
+		};
+		ob.dis(121);
+		
+		AClass.Subclass1 ob1= ob.new Subclass1();
+		ob1.m1(122);
+		AClass.SubClass2 ob2=new AClass.SubClass2();
+		ob2.m2(123);
+
+	}
+	AClass.SubClass2 ob2=new AClass.SubClass2() {
+		
+	};
+	Nested_Abstact_Class nac=new Nested_Abstact_Class() {
+		
+	};
+	
+	
+	
+
+}

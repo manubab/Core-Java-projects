@@ -1,0 +1,25 @@
+package com.manu.sw;
+
+import java.util.*;
+public class Demo {
+	
+	public static void main(String[] args) {
+		
+		try(Scanner sc=new Scanner(System.in);)
+		{
+			System.out.println("Enter name");
+			String name=sc.nextLine();
+			System.out.println("Enter rollNo :");
+			int rollNo=sc.nextInt();
+			
+			System.out.println("Enter branch :");
+			
+			
+			
+		}catch()
+		{
+			
+		}
+	}
+
+}

@@ -1,0 +1,21 @@
+package maccess;
+
+interface Area1{
+	
+	void Circle();
+	
+	interface volume{
+		void semi_circle();
+	}
+}
+
+
+
+public class InnerInterface implements Area{
+
+	public static void main(String[] args) {
+		System.out.println("**** Using Inner Interface****");
+
+	}
+
+}

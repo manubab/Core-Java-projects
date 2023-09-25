@@ -1,0 +1,58 @@
+package maccess;
+import java.util.*;
+import java.util.function.*;
+import test.*;
+public class Demo_Product {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+	
+		ArrayList<Product> al=new ArrayList<>();
+		al.add(new Product("A121","Mouse",1200,20));
+		al.add(new Product("A212","Laptop",13200,10));
+		al.add(new Product("A111","Mobile",9900,15));
+		al.add(new Product("A232","SWatch",3200,18));
+		al.add(new Product("A131","iPhone",44200,2));
+		al.add(new Product("A112","applelap",210200,04));
+		
+		for(Product p1:al)
+			System.out.println(p1.toStrig());
+		
+		System.out.println("Retriving based on Condition");
+		System.out.println("Enter Condition Qty");
+		int Qtyn=Integer.parseInt(sc.nextLine());
+		
+		Predicate<Product> pr=(k)->k.pQty<Qtyn;
+		
+		for(Product p1:al)
+		{
+			if(pr.test(p1))
+			{
+				System.out.println(p1.toStrig()+(p1.pQty+10));
+			}
+		}
+		
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

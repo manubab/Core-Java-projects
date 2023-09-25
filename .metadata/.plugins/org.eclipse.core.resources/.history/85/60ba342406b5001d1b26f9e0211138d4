@@ -1,0 +1,10 @@
+package maccess;
+import test.*;
+
+class Demo_Inheritance_9 {
+	public static void main(String[] args) {
+		ClassA ob=new ClassB();
+		ob.m();
+	}
+
+}

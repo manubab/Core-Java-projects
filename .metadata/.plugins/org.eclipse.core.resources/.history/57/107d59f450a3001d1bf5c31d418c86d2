@@ -1,0 +1,16 @@
+package test;
+public class Class_practice {
+	public static void getChar() {
+		
+		for(char c='z';c>='a';c--) {
+			System.out.print(c+"\n");
+			char s=c;
+			System.out.print(s);
+		}
+		
+	}
+	public static void main(String[] args) {
+		Class_practice.getChar();
+	}
+
+}

@@ -1,0 +1,53 @@
+
+/*
+ * 
+ * 1)=>prg: print all digits of a number n on different lines
+ *  
+ * 2)=>palindrome number
+ * 
+ * 3)=> spy number sum its digits equal the product of the digits
+ * 
+ * 4)=>special number sum of digits and product of digits equal to given number
+ * 
+ * 5)=>Niven/Harshad number or not A number which is divisible by sum of its digits
+ * 
+ * 6)=>dock number or not A number which has zeroes prasent in it e.g 402,280;
+ * 
+ * 7)=>neon number or not where sum of digits of square of the number is equal to the number e.g : 9,9*9=81,9=8+1;
+ *
+ *8)=> Automorphic number or not it is a number which is contained in the last digit(s) of its square e.g : 25 in 625
+ *
+ *9)=> km number or not sum of facters of digits is equal to the number e.g: 145 => 1!+4!+5!;
+ *
+ *10) => Armstrong number or not
+ *
+ *11) => print all prime numbers with in 100 
+ *
+ */
+
+package test;
+
+import java.util.*;
+
+public class Test1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number :");
+		int n=sc.nextInt();
+		int m=n;
+		int sum=0;
+		
+		while(n!=0) {
+			int d=n%10;
+			sum=sum*10+d;
+			n=n/10;
+			
+		}
+		if(m==sum) {
+			System.out.println("palindrome");
+		}else {
+			System.out.println("not palindrome");
+		}
+	}
+
+}

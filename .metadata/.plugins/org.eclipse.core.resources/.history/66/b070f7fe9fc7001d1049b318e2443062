@@ -1,0 +1,36 @@
+package com.manu.sw;
+
+import java.util.*;
+public class Demo extends Exception {
+	
+	public Demo(String msg) {
+		
+		super(msg);
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		try(Scanner sc=new Scanner(System.in);)
+		{
+			System.out.println("Enter name");
+			String name=sc.nextLine();
+			System.out.println("Enter rollNo :");
+			int rollNo=sc.nextInt();
+			if(!(rollNo>0&&rollNo<9)) 
+			{
+				System.out.println("Enter branch :");
+				String br=sc.nextLine();
+				Demo d=new Demo(" enter only integer data ...!");
+				throw d;
+			
+			}
+ 			
+			
+		}catch(Demo d)
+		{
+			System.out.print(d.getMessage());			
+		}
+	}
+
+}

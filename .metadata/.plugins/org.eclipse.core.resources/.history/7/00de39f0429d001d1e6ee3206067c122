@@ -1,0 +1,26 @@
+package nit;
+
+import java.util.Scanner;
+
+import test.DisplayTrainDetails;
+public class DemoConTrainDetails2 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the trina num");
+		int a=sc.nextInt();
+		System.out.println("Enter train name");
+		String b=sc.nextLine();
+		System.out.println("Enter train start time");
+		String c=sc.nextLine();
+		System.out.println("Enter jurney delay time");
+		String d=sc.nextLine();
+		DisplayTrainDetails dt=new DisplayTrainDetails(a,b,c,);
+		dt.getTrainDetails();
+	}
+
+	private static String nextLine() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

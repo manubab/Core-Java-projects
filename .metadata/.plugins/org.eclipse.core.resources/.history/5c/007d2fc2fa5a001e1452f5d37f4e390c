@@ -1,0 +1,10 @@
+package zigzag;
+
+public class Solution1
+{
+	public String zigZag(String s,int numRows)
+	{
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+package maccess;
+import java.util.*;
+import test.Books;
+public class Demo_Book_Array_Assignment {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter How many Number of Books :");
+		int n=sc.nextInt();
+		Books[] b=new Books[n];
+		for(int i=0;i<b.length;i++) {
+			b[i]=new Books(sc.nextLine(),sc.nextLine(),sc.nextLine(),sc.nextInt(),sc.nextInt());
+		}
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package test;
+
+public class ClassB extends ClassA{
+	
+	public ClassB(int v,int c) {
+		super(v);
+		System.out.println("==============child Class Constructor =======");
+		System.out.println(v);
+		System.out.println(c);
+	}
+
+}

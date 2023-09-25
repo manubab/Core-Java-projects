@@ -1,0 +1,17 @@
+package maccess;
+import test.*;
+import java.util.*;
+
+public class Student_Demo_Exception_Handling_Process {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter name :");
+		String name=sc.nextLine();
+		System.out.println("Enter rollno :");
+		String rollno=sc.nextLine();
+		System.out.println("branch :");
+		String branch=sc.nextLine();
+
+	}
+
+}

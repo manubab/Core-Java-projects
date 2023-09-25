@@ -1,0 +1,35 @@
+package test;
+public class Arrays_Problems {
+	public static void main(String[] args) {
+		int sum = 0;
+		int multi = 0;
+		int[] a = { 12, 23, 34, 12, 23, 44, 35 };
+		for (int i=0;i <=a.length;i++) {
+            sum++;
+			//    12*23*34=9384
+			
+//			multi = a[0] * a[1] * a[2];
+			sum = a[i];
+
+		}
+		System.out.println("sum :" + sum);
+//		System.out.println("multiplication : " + multi);
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//length(),length;

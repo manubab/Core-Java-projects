@@ -1,0 +1,10 @@
+package maccess;
+
+public class Student_Demo_Exception_Handling_Process {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

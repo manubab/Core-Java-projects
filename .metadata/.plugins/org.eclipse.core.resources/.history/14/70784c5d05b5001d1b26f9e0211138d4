@@ -1,0 +1,13 @@
+package test;
+
+public class ClassB extends ClassA{
+	public static void m() {
+		System.out.println("i am static method Class B");
+	}
+	public static void m(int i) {
+		System.out.println("I am static method Class B");
+		
+		
+	}
+
+}

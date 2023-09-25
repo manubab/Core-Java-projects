@@ -1,0 +1,11 @@
+package string;
+
+public class StringEx1 
+{
+	
+	public static void getUninqChar(String input)
+	{
+		
+	}
+
+}

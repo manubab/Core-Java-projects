@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;StudentResult.java&apos; to &apos;Exception_Handling_Process_Assignment_15_3_March/src/test&apos;&#x0D;&#x0A;- Original project: &apos;String_App6&apos;&#x0D;&#x0A;- Destination element: &apos;Exception_Handling_Process_Assignment_15_3_March/src/test&apos;&#x0D;&#x0A;- Original element: &apos;test.StudentResult.java&apos;" description="Copy compilation unit" destination="=Exception_Handling_Process_Assignment_15_3_March/src&lt;test" element1="/src&lt;test{StudentResult.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1678958188942" units="1" version="1.0"/>
+</session>

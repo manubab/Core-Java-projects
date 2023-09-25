@@ -1,0 +1,53 @@
+package String_Practice;
+import java.util.*;
+class A1{
+	Scanner sc=new Scanner(System.in);
+	
+	void CharSaparateLine() {
+		System.out.println("Enter String :");
+		String s=sc.nextLine();
+		int count=0;
+		for(int i=0;i<s.length();i++) { 
+			char c=s.charAt(i);
+		//	System.out.println(c);                                     // printing Separate Line
+		//	System.out.println("ASCII :"+(int)c);                      // converting char to ASCII every Char in a String
+		
+//			if(Character.isUpperCase(c)) {
+//				System.out.println(c);                                 // printing UpperCase char only 
+//			}
+			
+//			if(Character.isLowerCase(c)) {                             // printing LowerCase char only
+//			System.out.println(""); 
+//			}                             
+//		}
+	
+//			if(Character.isDigit(c)) {                                 // printing only digits
+//				System.out.println(c);
+//			}
+			
+//			if(Character.isLetterOrDigit(c)) {                          // printing Letters and characters
+//				System.out.println("L/d :"+c);
+//			}
+			
+			if(Character.isUpperCase(c)) {
+				count++;
+			}
+			
+			
+		}
+		System.out.println("Upper :"+count);
+
+	}
+
+}
+
+
+public class Main1 {
+   public static void main(String[] args) {
+	   A1 a=new A1();
+	   a.CharSaparateLine();
+   }
+	
+}
+
+

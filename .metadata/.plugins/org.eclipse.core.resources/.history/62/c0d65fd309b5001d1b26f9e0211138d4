@@ -1,0 +1,15 @@
+package test;
+
+ // overloading methods
+
+public class ClassA {
+	public void m() {
+		System.out.println("I am instance method from parent class ");
+	}
+	public void m(Integer a) {
+		
+		System.out.println("I am instance method from parent class "+a);
+	}
+	
+
+}

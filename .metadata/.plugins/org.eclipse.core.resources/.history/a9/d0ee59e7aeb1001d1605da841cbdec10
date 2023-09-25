@@ -1,0 +1,13 @@
+package test;
+import java.util.*;
+
+public class Reader {
+	public StringBuffer sb=null;
+	public Reader(StringBuffer sb) {
+		this.sb=sb;
+	}
+	public void read() {
+		
+	}
+
+}
